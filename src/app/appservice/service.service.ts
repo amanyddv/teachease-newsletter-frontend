@@ -9,7 +9,8 @@ export class ServiceService {
 
   constructor(private http:HttpClient) { }
 
-  url="http://localhost:7000/"
+  ur="http://localhost:7000/";
+  url="https://techease-newsletter-api.vercel.app/";
 
   postnewsletter(data:any){
     this.http.post<any>(this.url+"postnewsletter",data).subscribe((res)=>{
