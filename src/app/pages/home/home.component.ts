@@ -26,9 +26,9 @@ export class HomeComponent {
     this.showSuccessMessage = true;
 
     // Clear the email field
-    this.subscribeForm.get('email')?.setValue('');
   }
   closeSuccessMessage() {
     this.showSuccessMessage = false;
+
   }
 }
