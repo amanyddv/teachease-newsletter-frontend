@@ -76,3 +76,6 @@ p {
     cursor: not-allowed;
   }
   
+  .successful{
+    color: green;
+  }
