@@ -20,3 +20,10 @@
   h3 {
     margin: 0;
   }
+
+  .loading-indicator {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #4285f4; /* Loading indicator color, customize as needed */
+  }
