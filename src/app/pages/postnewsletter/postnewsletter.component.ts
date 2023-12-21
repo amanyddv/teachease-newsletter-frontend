@@ -22,7 +22,6 @@ export class PostnewsletterComponent {
   onSubmit() {
     if (this.feedForm.valid) {
       // Handle the feed submission logic here (e.g., send data to the server)
-      console.log('Feed submitted with:', this.feedForm.value);
       this.service.postnewsletter(this.feedForm.value);
       // Reset the form after submission
       this.feedForm.reset();
