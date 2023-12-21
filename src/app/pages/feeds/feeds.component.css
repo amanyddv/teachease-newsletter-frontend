@@ -1,0 +1,22 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+  .card-header {
+    padding: 16px;
+    background-color: #4285f4; /* Header background color, customize as needed */
+    color: white;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  h3 {
+    margin: 0;
+  }

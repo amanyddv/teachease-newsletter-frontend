@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<header>
+    <h1>TechEase Newsletter</h1>
+    <p>Your Source for the Latest in Technology and Engineering</p>
+</header>
+
+<section>
+    <h1>Welcome to TechEase!</h1>
+    <p>
+        Elevate your knowledge and stay ahead in the ever-evolving world of technology. TechEase brings you curated newsletters filled with the latest trends, innovations, and insights specifically tailored for engineering students.
+    </p>
+    <p>
+        Whether you're passionate about software development, robotics, artificial intelligence, or any other tech field, our newsletters cover a wide range of topics to keep you informed and inspired.
+    </p>
+    <p>
+        Subscribe now and join our community of tech enthusiasts who are eager to explore the frontiers of engineering and technology. Don't miss out on the byte-sized updates that can shape your future in the tech industry!
+    </p>
+
+   <!-- subscribe.component.html -->
+   <div class="subscribe-form">
+    <h2>Subscribe to TechEase Newsletter</h2>
+    <form [formGroup]="subscribeForm" (ngSubmit)="onSubmit()">
+      <label for="email" id="email">Email:</label>
+      <input type="email" id="email" formControlName="email" required>
+  
+      <div *ngIf="subscribeForm.get('email')!.hasError('required') && subscribeForm.get('email')!.touched">
+        Email is required.
+      </div>
+      <div *ngIf="subscribeForm.get('email')!.hasError('email') && subscribeForm.get('email')!.touched">
+        Please enter a valid email address.
+      </div>
+  
+      <button type="submit" [disabled]="!subscribeForm.valid">Subscribe</button>
+    </form>
+
+    <!-- Success message popup -->
+  <div *ngIf="showSuccessMessage" class="success-popup">
+    <p>Subscription successful! Thank you for subscribing to TechEase Newsletter.</p>
+    <button (click)="closeSuccessMessage()">Close</button>
+  </div>
+    </div>
+      
+
+</section>

@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+
+
+<div class="card" *ngFor="let newsletterItem of newsletterItems" >
+    <div class="card-header">
+        <h3>{{ newsletterItem.title }}</h3>
+    </div>
+    <div class="card-body">
+        <p>{{ newsletterItem.content}}</p>
+    </div>
+</div>
