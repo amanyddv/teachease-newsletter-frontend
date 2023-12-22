@@ -7,7 +7,7 @@ import { PostnewsletterComponent } from './pages/postnewsletter/postnewsletter.c
 const routes: Routes = [
   {path:"",component:HomeComponent},
   {path:"feeds",component:FeedsComponent},
-  {path:"postnewsletter",component:PostnewsletterComponent}
+  {path:"postnewslettervivek",component:PostnewsletterComponent}
 ];
 
 @NgModule({
