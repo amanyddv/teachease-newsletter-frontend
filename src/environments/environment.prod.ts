@@ -1,6 +1,7 @@
 // environment.prod.ts
 export const environment = {
     production: true,
-    apiUrl: 'https://techease-newsletter-api.vercel.app/',
+    apiUrl: process.env.API_URL ,
   };
   
+//   'https://techease-newsletter-api.vercel.app/'
