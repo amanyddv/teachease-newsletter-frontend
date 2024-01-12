@@ -32,7 +32,6 @@ export class ContactComponent {
     this.service.contact(
       this.contactForm.value
     ).subscribe(response => {
-      console.log(response); // Handle the response as needed
     });
     alert('Thanks for your time')
     this.contactForm.reset();

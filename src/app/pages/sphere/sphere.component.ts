@@ -30,7 +30,6 @@ export class SphereComponent {
 
 
   navigateToPage2(title: string) {
-    console.log(title)
     // Add navigation logic here, for example:
     this.router.navigate(['/subscribeSphere', title]);
   }

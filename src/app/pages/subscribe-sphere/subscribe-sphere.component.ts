@@ -29,14 +29,12 @@ export class SubscribeSphereComponent {
 
   getOtp() {
     const segmentData = this.route.snapshot.paramMap.get('title'); // Replace 'segmentName' with the actual parameter name
-    console.log('Segment Data:', segmentData);
     const email = this.otpForm.value.email;
     
     this.service.sendOTP({
       email:email,
       title:segmentData,
     }).subscribe(response => {
-      console.log(response); // Handle the response as needed
     });
     this.isOtpSent = true;
 
@@ -47,7 +45,6 @@ export class SubscribeSphereComponent {
     const email = this.otpForm.value.email; // Replace with the actual email
     const otp = this.otpForm.value.otp; // Replace with the actual OTP
     this.service.verifyOTPAndRegister(email, otp).subscribe(response => {
-      console.log(response); // Handle the response as needed
     });
   }
  
