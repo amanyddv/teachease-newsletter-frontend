@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+<header>
+    <h1>SPHERES</h1>
+    <p>Discover and learn with Sphere! Pick your interests, whether it's one or many. Receive a daily newsletter
+        tailored to your choices, covering basics to advanced topics. <br><br>
+
+        Subscribing is simple: enter your email, get an OTP, enter it, and congratulations! You're now subscribed.
+        Elevate your learning with Sphere's impressive content. Subscribe now!</p>
+</header>
+
+<div class="card-container">
+    <div *ngFor="let sphere of spheres" class="card" (click)="navigateToPage2(sphere.title)">
+      <img [src]="'./assets/spheres/' + sphere.logo" alt="{{ sphere.title }} Logo" class="card-logo">
+      <div class="card-body">
+        <h2 class="card-title">{{ sphere.title }}</h2>
+      </div>
+    </div>
+  </div>
+  

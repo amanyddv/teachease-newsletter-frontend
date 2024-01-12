@@ -1,0 +1,33 @@
+<!-- contact-form.component.html -->
+<app-navbar></app-navbar>
+<header>
+    <h1>KNOWLEDGE SPHERE</h1>
+    <p>Your Source for the Latest in Technology and Engineering</p>
+</header>
+
+  
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+  
+    <div class="contact-form-container">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" formControlName="name" placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" formControlName="email" placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-group">
+          <label for="query">Query:</label>
+          <textarea id="query" formControlName="query" placeholder="Enter your query"></textarea>
+        </div>
+  
+        <button type="submit" [disabled]="!contactForm.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+  
