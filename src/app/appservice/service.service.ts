@@ -33,7 +33,6 @@ export class ServiceService {
 
 
   sendOTP(email: any): Observable<any> {
-    console.log(email)
     return this.http.post(`${this.apiUrl}sendOTP`, email);
   }
 
@@ -43,7 +42,6 @@ export class ServiceService {
   }
 
   contact(data: any): Observable<any> {
-    console.log(data)
     return this.http.post(`${this.apiUrl}contact`,data);
   }
 
